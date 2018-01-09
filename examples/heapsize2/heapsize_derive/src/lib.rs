@@ -13,6 +13,8 @@ use syn::{DeriveInput, Data, Fields, Generics, GenericParam, Index};
 use syn::spanned::Spanned;
 use quote::Tokens;
 
+fn foo() { }
+
 #[proc_macro_derive(HeapSize)]
 pub fn derive_heap_size(input: TokenStream) -> TokenStream {
     foo();
