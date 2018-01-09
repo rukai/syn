@@ -15,6 +15,7 @@ use quote::Tokens;
 
 #[proc_macro_derive(HeapSize)]
 pub fn derive_heap_size(input: TokenStream) -> TokenStream {
+    foo();
     // Parse the input tokens into a syntax tree.
     let input: DeriveInput = syn::parse(input).unwrap();
 
